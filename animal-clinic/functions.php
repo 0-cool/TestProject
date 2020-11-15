@@ -43,6 +43,7 @@ if ( ! function_exists( 'animal_clinic_setup' ) ) :
 	}
 	add_action( 'wp_enqueue_scripts', 'bootstrap_js');
 	
+
 	function animal_clinic_setup() {
 		/*
 		 * Make theme available for translation.
@@ -173,6 +174,7 @@ function animal_clinic_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'animal_clinic_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
