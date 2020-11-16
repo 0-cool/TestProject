@@ -128,7 +128,7 @@
 	</div>
 </div><!-- .site-branding -->
 
-<div class="searchbar active">
+<div class="searchbar active" style="display:none">
 	<div class="container">
 		<div class="searchbar-inner">
 			<input type="text" class="form-control field-control" placeholder="Search here...">
@@ -142,3 +142,6 @@
 	</div>
 </div>
 
+<?php
+require('template-home.php');
+?>
