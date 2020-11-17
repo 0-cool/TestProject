@@ -34,16 +34,14 @@
 		<?php the_custom_logo();?>	
 	</div>
 	<div class="container site-branding top-header-holder">
-		
+		<div class="logo-holder">
+			<div class="logo">
+				<?php the_custom_logo();?>	
+			</div>
+		</div>
 		<div class="row">
-			<div class="col-2">
-				<div class="logo-holder">
-					<div class="logo">
-						<?php the_custom_logo();?>	
-					</div>
-				</div>
-			</div> 
-			<div class="col-10">
+				
+			<div class="col-12">
 				<div class="row">
 					<div class="col">
 						<div class="call-us"><span>call us today</span> <a href="tel:9413557707">941-355-7707</a></div>
@@ -58,8 +56,6 @@
 						<div class="nav-bar-holder full-version">
 							<nav id="site-navigation" class="main-navigation">
 							
-								<div class="call-us-tablet"><span>call us today</span> <a href="tel:9413557707">941-355-7707</a></div>
-								
 								<div class="header-search">
 									<a href="javascript:void(0);" class="icon-search">
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -68,6 +64,10 @@
 									</svg>
 									</a>
 								</div>
+								
+								<div class="call-us-tablet"><span>call us today</span> <a href="tel:9413557707">941-355-7707</a></div>
+								
+
 								<button class="navbar-toggler collapsed menu-toggle" type="button" data-toggle="collapse" data-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="navbar-toggler-icon">
 										<span></span>
@@ -128,7 +128,7 @@
 	</div>
 </div><!-- .site-branding -->
 
-<div class="searchbar active" style="display:none">
+<div class="searchbar active" style="display:none;">
 	<div class="container">
 		<div class="searchbar-inner">
 			<input type="text" class="form-control field-control" placeholder="Search here...">
@@ -141,6 +141,7 @@
 		</div>
 	</div>
 </div>
+
 
 <?php
 require('template-home.php');
