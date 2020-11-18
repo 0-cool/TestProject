@@ -923,6 +923,206 @@
 	</div>
 <!-- Exotic Care End -->
 
+<!-- Fun Fact Start 
+<div class="fun-fact line-bg">
+		<div class="container">
+			<div class="fun-friday">
+				FUN FACT
+				<span class="friday-label">FRIDAY</span>
+			</div>
+			<div class="fun-fact-owl owl-carousel owl-loaded owl-drag">
+				
+				
+				
+				
+			<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1750px, 0px, 0px); transition: all 0s ease 0s; width: 7002px;"><div class="owl-item slidenumber3 cloned" style="width: 875.2px;"><div class="item">
+					<div class="fun-image">
+						<img src=<?php echo get_template_directory_uri() . "/img/video-image3.jpg" ?> alt="Video">
+						<a class="play-icon icon-youtube" href="javascript:void(0);"></a>
+					</div>
+					<div class="fun-content">
+						<p>This is the first of a 2 part series on the dreaded and stinky Anal Glands! What are
+							they? Why do pets have them? and what can we do to help/stop the smell? Watch this and
+							our second installment to learn more!
+						</p>
+						<a class="btn btn-primary" href="javascript:void(0);">View Our Video Library</a>
+					</div>
+				</div></div><div class="owl-item slidenumber4 cloned" style="width: 875.2px;"><div class="item">
+					<div class="fun-image">
+						<img src=<?php echo get_template_directory_uri() . "/img/video-image4.jpg" ?> alt="Video">
+						<a class="play-icon icon-youtube" href="javascript:void(0);"></a>
+					</div>
+					<div class="fun-content">
+						<p>This is the first of a 2 part series on the dreaded and stinky Anal Glands! What are
+							they? Why do pets have them? and what can we do to help/stop the smell? Watch this and
+							our second installment to learn more!
+						</p>
+						<a class="btn btn-primary" href="javascript:void(0);">View Our Video Library</a>
+					</div>
+				</div></div><div class="owl-item slidenumber1 active" style="width: 875.2px;"><div class="item">
+					<div class="fun-image">
+						<img src=<?php echo get_template_directory_uri() . "/img/video-image1.jpg" ?> alt="Video">
+						<a class="play-icon icon-youtube" href="javascript:void(0);"></a>
+					</div>
+					<div class="fun-content">
+						<p>This is the first of a 2 part series on the dreaded and stinky Anal Glands! What are
+							they? Why do pets have them? and what can we do to help/stop the smell? Watch this and
+							our second installment to learn more!
+						</p>
+						<a class="btn btn-primary" href="javascript:void(0);">View Our Video Library</a>
+					</div>
+				</div></div><div class="owl-item slidenumber2" style="width: 875.2px;"><div class="item">
+					<div class="fun-image">
+						<img src=<?php echo get_template_directory_uri() . "/img/video-image2.jpg" ?> alt="Video">
+						<a class="play-icon icon-youtube" href="javascript:void(0);"></a>
+					</div>
+					<div class="fun-content">
+						<p>This is the first of a 2 part series on the dreaded and stinky Anal Glands! What are
+							they? Why do pets have them? and what can we do to help/stop the smell? Watch this and
+							our second installment to learn more!
+						</p>
+						<a class="btn btn-primary" href="javascript:void(0);">View Our Video Library</a>
+					</div>
+				</div></div><div class="owl-item slidenumber3" style="width: 875.2px;"><div class="item">
+					<div class="fun-image">
+						<img src=<?php echo get_template_directory_uri() . "/img/video-image3.jpg" ?> alt="Video">
+						<a class="play-icon icon-youtube" href="javascript:void(0);"></a>
+					</div>
+					<div class="fun-content">
+						<p>This is the first of a 2 part series on the dreaded and stinky Anal Glands! What are
+							they? Why do pets have them? and what can we do to help/stop the smell? Watch this and
+							our second installment to learn more!
+						</p>
+						<a class="btn btn-primary" href="javascript:void(0);">View Our Video Library</a>
+					</div>
+				</div></div><div class="owl-item slidenumber4" style="width: 875.2px;"><div class="item">
+					<div class="fun-image">
+						<img src=<?php echo get_template_directory_uri() . "/img/video-image4.jpg" ?> alt="Video">
+						<a class="play-icon icon-youtube" href="javascript:void(0);"></a>
+					</div>
+					<div class="fun-content">
+						<p>This is the first of a 2 part series on the dreaded and stinky Anal Glands! What are
+							they? Why do pets have them? and what can we do to help/stop the smell? Watch this and
+							our second installment to learn more!
+						</p>
+						<a class="btn btn-primary" href="javascript:void(0);">View Our Video Library</a>
+					</div>
+				</div></div><div class="owl-item slidenumber1 cloned" style="width: 875.2px;"><div class="item">
+					<div class="fun-image">
+						<img src=<?php echo get_template_directory_uri() . "/img/video-image1.jpg" ?> alt="Video">
+						<a class="play-icon icon-youtube" href="javascript:void(0);"></a>
+					</div>
+					<div class="fun-content">
+						<p>This is the first of a 2 part series on the dreaded and stinky Anal Glands! What are
+							they? Why do pets have them? and what can we do to help/stop the smell? Watch this and
+							our second installment to learn more!
+						</p>
+						<a class="btn btn-primary" href="javascript:void(0);">View Our Video Library</a>
+					</div>
+				</div></div><div class="owl-item slidenumber2 cloned" style="width: 875.2px;"><div class="item">
+					<div class="fun-image">
+						<img src=<?php echo get_template_directory_uri() . "/img/video-image2.jpg" ?> alt="Video">
+						<a class="play-icon icon-youtube" href="javascript:void(0);"></a>
+					</div>
+					<div class="fun-content">
+						<p>This is the first of a 2 part series on the dreaded and stinky Anal Glands! What are
+							they? Why do pets have them? and what can we do to help/stop the smell? Watch this and
+							our second installment to learn more!
+						</p>
+						<a class="btn btn-primary" href="javascript:void(0);">View Our Video Library</a>
+					</div>
+				</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot dotnumber1 active" data-info="1" style="background-image: url(&quot;../img/video-image1.jpg&quot;);"><span></span></button><button role="button" class="owl-dot dotnumber2" data-info="2" style="background-image: url(&quot;../img/video-image2.jpg&quot;);"><span></span></button><button role="button" class="owl-dot dotnumber3" data-info="3" style="background-image: url(&quot;../img/video-image3.jpg&quot;);"><span></span></button><button role="button" class="owl-dot dotnumber4" data-info="4" style="background-image: url(&quot;../img/video-image4.jpg&quot;);"><span></span></button></div></div>
+		</div>
+	</div>
+Fun Fact End -->
+
+<!-- Testi and Blog Start -->
+<div class="testi-blog">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="testimonials">
+						<div class="comman-icon">
+							<span class="icon-quotes"></span>
+						</div>
+						<h1>What Our Clients Have to Say</h1>
+						<a class="btn btn-primary" href="javascript:void(0);">View All Testimonials</a>
+						<div class="testi-owl owl-carousel owl-loaded owl-drag">
+							
+							
+						<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-800px, 0px, 0px); transition: all 0s ease 0s; width: 2400px;"><div class="owl-item cloned" style="width: 400px;"><div class="item">
+								<p>“The entire staff was friendly and professional. Dr. Sam was extremely knowledgeable,
+									kind, and eased my anxiety. Even though I was worried they comforted me, answered
+									all of
+									my questions, and took great care of my fur baby.” <br>
+								</p>
+								<b>- Zach Gennette</b>
+							</div></div><div class="owl-item cloned" style="width: 400px;"><div class="item">
+								<p>“The entire staff was friendly and professional. Dr. Sam was extremely knowledgeable,
+									kind, and eased my anxiety. Even though I was worried they comforted me, answered
+									all of
+									my questions, and took great care of my fur baby.” <br>
+								</p>
+								<b>- Zach Gennette</b>
+							</div></div><div class="owl-item active" style="width: 400px;"><div class="item">
+								<p>“The entire staff was friendly and professional. Dr. Sam was extremely knowledgeable,
+									kind, and eased my anxiety. Even though I was worried they comforted me, answered
+									all of
+									my questions, and took great care of my fur baby.” <br>
+								</p>
+								<b>- Zach Gennette</b>
+							</div></div><div class="owl-item" style="width: 400px;"><div class="item">
+								<p>“The entire staff was friendly and professional. Dr. Sam was extremely knowledgeable,
+									kind, and eased my anxiety. Even though I was worried they comforted me, answered
+									all of
+									my questions, and took great care of my fur baby.” <br>
+								</p>
+								<b>- Zach Gennette</b>
+							</div></div><div class="owl-item cloned" style="width: 400px;"><div class="item">
+								<p>“The entire staff was friendly and professional. Dr. Sam was extremely knowledgeable,
+									kind, and eased my anxiety. Even though I was worried they comforted me, answered
+									all of
+									my questions, and took great care of my fur baby.” <br>
+								</p>
+								<b>- Zach Gennette</b>
+							</div></div><div class="owl-item cloned" style="width: 400px;"><div class="item">
+								<p>“The entire staff was friendly and professional. Dr. Sam was extremely knowledgeable,
+									kind, and eased my anxiety. Even though I was worried they comforted me, answered
+									all of
+									my questions, and took great care of my fur baby.” <br>
+								</p>
+								<b>- Zach Gennette</b>
+							</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="home-blog">
+						<div class="blog-title">
+							<h4 class="optinal-h4">OUR BLOG</h4>
+							<a class="btn btn-secondary" href="javascript:void(0);">View All Posts</a>
+						</div>
+						<div class="blog-main">
+							<div class="blog-image">
+								<img src=<?php echo get_template_directory_uri() . '/img/blog-image.jpg'?> alt="Blog">
+							</div>
+							<div class="blog-content">
+								<div class="blog-inner">
+									<h4>RAW PET FOODS: WHAT YOU NEED TO KNOW</h4>
+									<p>One of the new trends in pet foods is feeding a raw diet. For some, this diet is
+										based on
+										that of wild species related to dogs. […]</p>
+									<div class="readmore">
+										<a class="btn btn-primary" href="javascript:void(0);">Read More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Testi and Blog End -->
 <?php
 get_footer();
 
