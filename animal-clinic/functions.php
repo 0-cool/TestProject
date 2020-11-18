@@ -203,3 +203,50 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+function WebFX_Test_load_stlysheets(){
+
+	//bootstrap --->
+	wp_register_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), 1, 'all');
+	wp_enqueue_style('bootstrap');
+
+	
+	//owlcarousel --->
+	wp_register_style('owlcarousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), 1, 'all');
+	wp_enqueue_style('owlcarousel');
+	
+	//owlcarousel-min --->
+	wp_register_style('owlcarousel-min', get_template_directory_uri() . '/assets/css/owl.theme.default.min.css', array(), 1, 'all');
+	wp_enqueue_style('owlcarousel-min');
+	
+	//iconmoon --->
+	wp_register_style('iconmoon', get_template_directory_uri() . '/assets/css/icomoon.css', array(), 1, 'all');
+	wp_enqueue_style('iconmoon');
+	
+	//styles --->
+	wp_register_style('styles', get_template_directory_uri() . '/assets/css/style.css', array(), 1, 'all');
+	wp_enqueue_style('styles');
+	
+	//responsive --->
+	wp_register_style('responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), 1, 'all');
+	wp_enqueue_style('responsive');
+
+}
+ 
+add_action('wp_enqueue_scripts', 'WebFX_Test_load_stlysheets');
+
+
+
+//load scripts
+function WebFX_Test_add_js(){
+
+	wp_register_script('lib', get_template_directory_uri() . '/assets/js/lib.min.js', array(), 1, 1, 1);
+	wp_enqueue_script('lib');
+
+	
+	wp_register_script('custom', get_template_directory_uri() . '/assets/js/custom.js', array(), 1, 1, 1);
+	wp_enqueue_script('custom');
+}
+
+add_action('wp_enqueue_scripts','WebFX_Test_add_js');
