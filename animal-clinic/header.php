@@ -36,17 +36,15 @@
 
 <body>
 	<?php
-	/*
-						the_custom_logo();	
+	/* 
 
-								wp_nav_menu(
-									array(
-										'theme_location' => 'menu-1',
-										'menu_id'        => 'primary-menu',
-									)
-								); */
+								*/
 
-	$covic_section = get_field('covic_section');						
+	//Custom Fields Groups ---> Start
+		$covic_section = get_field('covic_section');	
+		$header_section = get_field('header_section');						
+	//Custom Fields Groups ---> End
+	
 	?>
 	<!-- Header Start -->
 	<?php if(!empty($covic_section['covic_text'])):?>								
@@ -66,16 +64,28 @@
 		<div class="container">
 			<div class="header-wrap">
 				<div class="header-logo">
-					<a href="#">
-						<img src=<?php echo get_template_directory_uri() . "/assets/images/logo.png" ?> alt="University Animal Clinic" />
-					</a>
+					<?php the_custom_logo(); ?>
 				</div>
 				<div class="header-right">
 					<div class="header-content">
-						<div class="call-us"><span>call us today</span> <a href="tel:9413557707">941-355-7707</a></div>
+						<div class="call-us">
+							<span><?php echo $header_section['header_call_us_title']; ?></span> 
+							<a href=<?php echo 'tel:' . $header_section['header_call_us_phone']; ?>><?php echo $header_section['header_call_us_phone']; ?></a>
+						</div>
 						<div class="online-request">
-							<a href="#" class="btn btn-secondary">Online Pharmacy</a>
-							<a href="#" class="btn btn-primary">Request an Appointment</a>
+
+						<?php if(!empty($header_section['header_boton_link_1'])): ?>
+								<a href=<?php echo $header_section['header_boton_link_1']['url']; ?> class="btn btn-secondary">
+									<?php echo $header_section['header_boton_link_1']['title']; ?>
+								</a>
+							<?php endif; ?>
+							
+							<?php if(!empty($header_section['header_boton_link_2'])): ?>
+								<a href=<?php echo $header_section['header_boton_link_2']['url']; ?> class="btn btn-primary">
+									<?php echo $header_section['header_boton_link_2']['title']; ?>
+								</a>
+							<?php endif; ?>
+
 						</div>
 					</div>
 					<div class="header-bottom">
@@ -91,6 +101,14 @@
 								<span class="menu-text">Menu</span>
 							</button>
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								
+							<?php /*wp_nav_menu(
+										array(
+											'theme_location' => 'menu-1',
+											'menu_id'        => 'primary-menu',
+										)
+									);*/
+									?>
 								<ul class="navbar-nav">
 									<li class="nav-item active">
 										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
@@ -176,8 +194,9 @@
 									<li class="nav-item">
 										<a class="nav-link" href="#">Contact Us</a>
 									</li>
-								</ul>
+								</ul>-
 							</div>
+							
 						</nav>
 						<div class="header-search">
 							<a href="javascript:void(0);" class="icon-search"></a>

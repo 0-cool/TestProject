@@ -241,6 +241,7 @@ add_action('wp_enqueue_scripts', 'WebFX_Test_load_stlysheets');
 //load scripts
 function WebFX_Test_add_js(){
 
+	wp_deregister_script('jquery');
 	wp_register_script('lib', get_template_directory_uri() . '/assets/js/lib.min.js', array(), 1, 1, 1);
 	wp_enqueue_script('lib');
 
