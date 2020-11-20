@@ -219,7 +219,7 @@
 											<div class="service-info">
 												<div class="service-inner">
 													<div class="service-icon comman-icon">
-														<span class="icon-dental"></span>
+														<span class="icon-heart-paw"></span>
 													</div>
 													<div class="service-title"><?php echo $home_services_section['service_slide_title_2']; ?></div>
 													
@@ -244,7 +244,7 @@
 											<div class="service-info">
 												<div class="service-inner">
 													<div class="service-icon comman-icon">
-														<span class="icon-dental"></span>
+														<span class="icon-vaccines"></span>
 													</div>
 													<div class="service-title"><?php echo $home_services_section['service_slide_title_3']; ?></div>
 													
@@ -269,7 +269,7 @@
 											<div class="service-info">
 												<div class="service-inner">
 													<div class="service-icon comman-icon">
-														<span class="icon-dental"></span>
+														<span class="icon-exotic-care"></span>
 													</div>
 													<div class="service-title"><?php echo $home_services_section['service_slide_title_4']; ?></div>
 													
@@ -320,7 +320,7 @@
 													<div class="service-info">
 														<div class="service-inner">
 															<div class="service-icon comman-icon">
-																<span class="icon-dental"></span>
+																<span class="icon-heart-paw"></span>
 															</div>
 															<div class="service-title"><?php echo $home_services_section['service_slide_title_6']; ?></div>
 
@@ -344,7 +344,7 @@
 													<div class="service-info">
 														<div class="service-inner">
 															<div class="service-icon comman-icon">
-																<span class="icon-dental"></span>
+																<span class="icon-vaccines"></span>
 															</div>
 															<div class="service-title"><?php echo $home_services_section['service_slide_title_7']; ?></div>
 
@@ -368,7 +368,7 @@
 													<div class="service-info">
 														<div class="service-inner">
 															<div class="service-icon comman-icon">
-																<span class="icon-dental"></span>
+																<span class="icon-exotic-care"></span>
 															</div>
 															<div class="service-title"><?php echo $home_services_section['service_slide_title_8']; ?></div>
 
@@ -385,6 +385,7 @@
 									</div>
 								</div>
 							<?php endif; ?>
+
 						</div>
 					</div>
 					<div class="d-lg-none">
@@ -392,16 +393,24 @@
 							<div class="item">
 								<div class="service-box">
 									<div class="service-image">
-										<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img1.jpg" ?> alt="Service" />
+									
+										<?php if(!empty($home_services_section['services_slide_image_1'])): ?>
+											<img src=<?php echo $home_services_section['services_slide_image_1']['url']; ?> alt=<?php echo $home_services_section['services_slide_image_1']['alt']; ?> />
+										<?php else: ?>
+											<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img1.jpg" ?> alt="Service" />
+										<?php endif; ?>
 									</div>
 									<div class="service-info">
 										<div class="service-inner">
 											<div class="service-icon comman-icon">
 												<span class="icon-dental"></span>
 											</div>
-											<div class="service-title">Dental Cleaning</div>
-											<a class="learn-more" href="#">learn more <span
+											<div class="service-title"><?php echo $home_services_section['service_slide_title_1']; ?></div>
+											
+											<?php if(!empty($home_services_section['service_slide_link_1'])): ?>
+												<a class="learn-more" href=<?php echo $home_services_section['service_slide_link_1']['url']; ?>><?php echo $home_services_section['service_slide_link_1']['title']; ?> <span
 													class="icon-arrow-right"></span></a>
+											<?php endif;?>
 										</div>
 									</div>
 								</div>
@@ -409,122 +418,172 @@
 							<div class="item">
 								<div class="service-box">
 									<div class="service-image">
-										<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img2.jpg" ?> alt="Service" />
+									
+										<?php if(!empty($home_services_section['services_slide_image_2'])): ?>
+											<img src=<?php echo $home_services_section['services_slide_image_2']['url']; ?> alt=<?php echo $home_services_section['services_slide_image_2']['alt']; ?> />
+										<?php else: ?>
+											<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img2.jpg" ?> alt="Service" />
+										<?php endif; ?>
 									</div>
 									<div class="service-info">
 										<div class="service-inner">
 											<div class="service-icon comman-icon">
 												<span class="icon-heart-paw"></span>
 											</div>
-											<div class="service-title">Wellness Plans</div>
-											<a class="learn-more" href="#">learn more <span
+											<div class="service-title"><?php echo $home_services_section['service_slide_title_2']; ?></div>
+											
+											<?php if(!empty($home_services_section['service_slide_link_2'])): ?>
+												<a class="learn-more" href=<?php echo $home_services_section['service_slide_link_2']['url']; ?>><?php echo $home_services_section['service_slide_link_2']['title']; ?> <span
 													class="icon-arrow-right"></span></a>
+											<?php endif;?>
 										</div>
 									</div>
-								</div>
+								</div> 
 							</div>
 							<div class="item">
 								<div class="service-box">
 									<div class="service-image">
-										<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img3.jpg" ?> alt="Service" />
+									
+										<?php if(!empty($home_services_section['services_slide_image_3'])): ?>
+											<img src=<?php echo $home_services_section['services_slide_image_3']['url']; ?> alt=<?php echo $home_services_section['services_slide_image_3']['alt']; ?> />
+										<?php else: ?>
+											<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img3.jpg" ?> alt="Service" />
+										<?php endif; ?>
 									</div>
 									<div class="service-info">
 										<div class="service-inner">
 											<div class="service-icon comman-icon">
 												<span class="icon-vaccines"></span>
 											</div>
-											<div class="service-title">Vaccinations & Immunizations</div>
-											<a class="learn-more" href="#">learn more <span
+											<div class="service-title"><?php echo $home_services_section['service_slide_title_3']; ?></div>
+											
+											<?php if(!empty($home_services_section['service_slide_link_3'])): ?>
+												<a class="learn-more" href=<?php echo $home_services_section['service_slide_link_3']['url']; ?>><?php echo $home_services_section['service_slide_link_3']['title']; ?> <span
 													class="icon-arrow-right"></span></a>
+											<?php endif;?>
 										</div>
 									</div>
-								</div>
+								</div>  
 							</div>
 							<div class="item">
 								<div class="service-box">
 									<div class="service-image">
-										<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img4.jpg" ?> alt="Service" />
+									
+										<?php if(!empty($home_services_section['services_slide_image_4'])): ?>
+											<img src=<?php echo $home_services_section['services_slide_image_4']['url']; ?> alt=<?php echo $home_services_section['services_slide_image_4']['alt']; ?> />
+										<?php else: ?>
+											<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img4.jpg" ?> alt="Service" />
+										<?php endif; ?>
 									</div>
 									<div class="service-info">
 										<div class="service-inner">
 											<div class="service-icon comman-icon">
 												<span class="icon-exotic-care"></span>
 											</div>
-											<div class="service-title">Exotic Pet Care</div>
-											<a class="learn-more" href="#">learn more <span
+											<div class="service-title"><?php echo $home_services_section['service_slide_title_4']; ?></div>
+											
+											<?php if(!empty($home_services_section['service_slide_link_4'])): ?>
+												<a class="learn-more" href=<?php echo $home_services_section['service_slide_link_4']['url']; ?>><?php echo $home_services_section['service_slide_link_4']['title']; ?> <span
 													class="icon-arrow-right"></span></a>
+											<?php endif;?>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="service-box">
-									<div class="service-image">
-										<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img1.jpg" ?> alt="Service" />
-									</div>
-									<div class="service-info">
-										<div class="service-inner">
-											<div class="service-icon comman-icon">
-												<span class="icon-dental"></span>
+								</div>   
+							</div> 
+							<?php if((!empty($home_services_section['services_slide_image_5'])) || (!empty($home_services_section['services_slide_image_6'])) || (!empty($home_services_section['services_slide_image_7'])) || (!empty($home_services_section['services_slide_image_8']))): ?>
+								<div class="item">
+									<div class="service-box">
+										<div class="service-image">
+										
+											<?php if(!empty($home_services_section['services_slide_image_5'])): ?>
+												<img src=<?php echo $home_services_section['services_slide_image_5']['url']; ?> alt=<?php echo $home_services_section['services_slide_image_5']['alt']; ?> />
+											<?php endif; ?>
+										</div>
+										<div class="service-info">
+											<div class="service-inner">
+												<div class="service-icon comman-icon">
+													<span class="icon-exotic-care"></span>
+												</div>
+												<div class="service-title"><?php echo $home_services_section['service_slide_title_5']; ?></div>
+												
+												<?php if(!empty($home_services_section['service_slide_link_5'])): ?>
+													<a class="learn-more" href=<?php echo $home_services_section['service_slide_link_5']['url']; ?>><?php echo $home_services_section['service_slide_link_5']['title']; ?> <span
+														class="icon-arrow-right"></span></a>
+												<?php endif;?>
 											</div>
-											<div class="service-title">Dental Cleaning</div>
-											<a class="learn-more" href="#">learn more <span
-													class="icon-arrow-right"></span></a>
 										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="service-box">
-									<div class="service-image">
-										<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img2.jpg" ?> alt="Service" />
-									</div>
-									<div class="service-info">
-										<div class="service-inner">
-											<div class="service-icon comman-icon">
-												<span class="icon-heart-paw"></span>
+									</div>   
+								</div> 
+								<div class="item">
+									<div class="service-box">
+										<div class="service-image">
+										
+											<?php if(!empty($home_services_section['services_slide_image_6'])): ?>
+												<img src=<?php echo $home_services_section['services_slide_image_6']['url']; ?> alt=<?php echo $home_services_section['services_slide_image_6']['alt']; ?> />
+											<?php endif; ?>
+										</div>
+										<div class="service-info">
+											<div class="service-inner">
+												<div class="service-icon comman-icon">
+													<span class="icon-exotic-care"></span>
+												</div>
+												<div class="service-title"><?php echo $home_services_section['service_slide_title_6']; ?></div>
+												
+												<?php if(!empty($home_services_section['service_slide_link_6'])): ?>
+													<a class="learn-more" href=<?php echo $home_services_section['service_slide_link_6']['url']; ?>><?php echo $home_services_section['service_slide_link_6']['title']; ?> <span
+														class="icon-arrow-right"></span></a>
+												<?php endif;?>
 											</div>
-											<div class="service-title">Wellness Plans</div>
-											<a class="learn-more" href="#">learn more <span
-													class="icon-arrow-right"></span></a>
 										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="service-box">
-									<div class="service-image">
-										<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img3.jpg" ?> alt="Service" />
-									</div>
-									<div class="service-info">
-										<div class="service-inner">
-											<div class="service-icon comman-icon">
-												<span class="icon-vaccines"></span>
+									</div>   
+								</div> 
+								<div class="item">
+									<div class="service-box">
+										<div class="service-image">
+										
+											<?php if(!empty($home_services_section['services_slide_image_7'])): ?>
+												<img src=<?php echo $home_services_section['services_slide_image_7']['url']; ?> alt=<?php echo $home_services_section['services_slide_image_7']['alt']; ?> />
+											<?php endif; ?>
+										</div>
+										<div class="service-info">
+											<div class="service-inner">
+												<div class="service-icon comman-icon">
+													<span class="icon-exotic-care"></span>
+												</div>
+												<div class="service-title"><?php echo $home_services_section['service_slide_title_7']; ?></div>
+												
+												<?php if(!empty($home_services_section['service_slide_link_7'])): ?>
+													<a class="learn-more" href=<?php echo $home_services_section['service_slide_link_7']['url']; ?>><?php echo $home_services_section['service_slide_link_7']['title']; ?> <span
+														class="icon-arrow-right"></span></a>
+												<?php endif;?>
 											</div>
-											<div class="service-title">Vaccinations & Immunizations</div>
-											<a class="learn-more" href="#">learn more <span
-													class="icon-arrow-right"></span></a>
 										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="service-box">
-									<div class="service-image">
-										<img src=<?php echo get_template_directory_uri() . "/assets/images/service-img4.jpg" ?> alt="Service" />
-									</div>
-									<div class="service-info">
-										<div class="service-inner">
-											<div class="service-icon comman-icon">
-												<span class="icon-exotic-care"></span>
+									</div>   
+								</div> 
+								<div class="item">
+									<div class="service-box">
+										<div class="service-image">
+										
+											<?php if(!empty($home_services_section['services_slide_image_8'])): ?>
+												<img src=<?php echo $home_services_section['services_slide_image_8']['url']; ?> alt=<?php echo $home_services_section['services_slide_image_8']['alt']; ?> />
+											<?php endif; ?>
+										</div>
+										<div class="service-info">
+											<div class="service-inner">
+												<div class="service-icon comman-icon">
+													<span class="icon-exotic-care"></span>
+												</div>
+												<div class="service-title"><?php echo $home_services_section['service_slide_title_8']; ?></div>
+												
+												<?php if(!empty($home_services_section['service_slide_link_8'])): ?>
+													<a class="learn-more" href=<?php echo $home_services_section['service_slide_link_8']['url']; ?>><?php echo $home_services_section['service_slide_link_8']['title']; ?> <span
+														class="icon-arrow-right"></span></a>
+												<?php endif;?>
 											</div>
-											<div class="service-title">Exotic Pet Care</div>
-											<a class="learn-more" href="#">learn more <span
-													class="icon-arrow-right"></span></a>
 										</div>
-									</div>
-								</div>
-							</div>
+									</div>   
+								</div> 
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>
@@ -662,6 +721,10 @@
 						<h4 class="optinal-h4"><?php echo $exotic_care_section['exotic_name'];?></h4>
 						<h1><?php echo $exotic_care_section['exotic_title'];?></h1>
 						<p><?php echo $exotic_care_section['exotic_text'];?></p>
+
+						<?php if(!empty($exotic_care_section['exotic_link'])):?>
+							<a href=<?php echo $exotic_care_section['exotic_link']['url']; ?> class="btn btn-primary"><?php echo $exotic_care_section['exotic_link']['title']; ?></a>
+						<?php endif; ?>
 					</div>
 					<div class="col-lg-5">
 						<div class="exotic-images">
@@ -676,9 +739,7 @@
 
 								</div>
 
-                                <?php if(!empty($exotic_care_section['exotic_image_text_1'])):?>    
-								    <div class="team-title"><?php echo $exotic_care_section['exotic_image_text_1'];?></div>
-                                <?php endif; ?>
+								<div class="team-title"><?php echo $exotic_care_section['exotic_image_text_1'];?></div>
                                 
 							</div>
 							<div class="exotic-image2 team-box">
@@ -692,9 +753,7 @@
                                     
 								</div>
 
-                                <?php if(!empty($exotic_care_section['exotic_image_text_1'])):?>    
-								    <div class="team-title"><?php echo $exotic_care_section['exotic_image_text_1'];?></div>
-                                <?php endif; ?>
+								<div class="team-title"><?php echo $exotic_care_section['exotic_image_text_1'];?></div>
 
 							</div>
 						</div>

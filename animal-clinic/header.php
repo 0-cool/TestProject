@@ -20,7 +20,7 @@
 	<!-- SEO Metatag -->
 	<meta name="description" content="Free Web tutorials">
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	<link rel="shortcut icon" href=<?php echo get_template_directory_uri() . '/assets/images/favicon.ico';?>>
 
 	<!-- Responsive Metatag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,10 +36,6 @@
 
 <body>
 	<?php
-	/* 
-
-								*/
-
 	//Custom Fields Groups ---> Start
 		$covic_section = get_field('covic_section');	
 		$header_section = get_field('header_section');						
@@ -101,100 +97,7 @@
 								<span class="menu-text">Menu</span>
 							</button>
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								
-							<?php /*wp_nav_menu(
-										array(
-											'theme_location' => 'menu-1',
-											'menu_id'        => 'primary-menu',
-										)
-									);*/
-									?>
-								<ul class="navbar-nav">
-									<li class="nav-item active">
-										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
-											data-toggle="dropdown">Services</a>
-										<ul class="submenu dropdown-menu">
-											<li class="nav-item"><a class="nav-link" href="#">Telemedicine/Virtual
-													Veterinary Services</a>
-												<ul class="submenu dropdown-menu">
-													<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1
-														</a></li>
-													<li class="nav-item"><a class="nav-link" href="#"> Dropdown item
-															2</a></li>
-													<li class="nav-item"><a class="nav-link" href="#"> Dropdown item
-															3</a></li>
-												</ul>
-											</li>
-											<li class="nav-item"><a class="nav-link" href="#">Wellness Plans</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Vaccinations</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Exotic Pet Care</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Laser Therapy</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Dental Cleaning</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Elderly Pet Care
-													Services</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Pet Microchipping</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Dog Grooming Services</a>
-											</li>
-											<li class="nav-item"><a class="nav-link" href="#">How to Treat
-													Heartworms</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Flea & Tick Prevention</a>
-											</li>
-											<li class="nav-item"><a class="nav-link" href="#">Surgery and Specialty
-													Services for Pets</a></li>
-											<li class="nav-item"><a class="nav-link" href="#">Treating Itchy Skin & Pet
-													Allergies</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
-											data-toggle="dropdown">Types of
-											Animals</a>
-										<ul class="submenu dropdown-menu">
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1 </a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 2</a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 3</a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 4</a>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
-											data-toggle="dropdown">Resources</a>
-										<ul class="submenu dropdown-menu">
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1 </a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 2</a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 3</a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 4</a>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Testimonials</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
-											data-toggle="dropdown">Service
-											Area</a>
-										<ul class="submenu dropdown-menu">
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1 </a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 2</a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 3</a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 4</a>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
-											data-toggle="dropdown">About Us</a>
-										<ul class="submenu dropdown-menu">
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1 </a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 2</a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 3</a></li>
-											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 4</a>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Contact Us</a>
-									</li>
-								</ul>-
+								<?php wp_nav_menu(array('theme_location' => 'menu-1','menu_id'        => 'primary-menu',)); ?>
 							</div>
 							
 						</nav>

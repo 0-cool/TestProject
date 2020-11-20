@@ -29,6 +29,9 @@
     .header-logo { max-width: 170px; }
     .navbar .navbar-nav > .nav-item > .nav-link { font-size: 14px; padding: 0 7px; line-height: 40px; }
     .dropdown-toggle::after { width: 9px; height: 6px; background-size: 100% auto; margin-left: 5px; }
+
+    .menu > .menu-item-has-children > a::after{ width: 9px; height: 6px; background-size: 100% auto; margin-left: 1px; }
+
     .header .icon-search { font-size: 22px; }
     header.header .online-request { margin-left: 15px; margin-right: -20px; }
     header.header .header-content { margin-bottom: 13px; }
@@ -74,6 +77,9 @@
 }
 
 @media only screen and (max-width:991.98px) {
+    
+    .menu > .menu-item-has-children > a::after{ width: 9px; height: 6px; background-size: 100% auto; margin-left: 5px; }
+
     .optinal-h4 { padding: 4px 0 4px 14px; }
 
     .covid-message .covid-text { max-width: 680px; text-align: center; font-size: 13px; }    
